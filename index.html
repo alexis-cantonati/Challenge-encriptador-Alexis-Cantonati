@@ -9,33 +9,57 @@
 
   <body>
     <header class="header">
-        <h1 class="header-titulo">a</h1>
+      <img
+        class="header-imagen"
+        src="assets/logo alura.jfif"
+        alt="logo alura"
+      />
     </header>
-
     <main class="presentacion">
-      <p class="texto-encriptador"></p>
-      <textarea class="presentacion-cifrar" name="btnCifrar" id="btnCifrar" autofocus 
-      placeholder="Ingrese el texto aqui"></textarea>
-      <textarea class="presentacion-descifrar" name="btnDescifrar" id="btnDescifrar"></textarea>
+      <section class="presentacion-principal">
+        <div class="presentacion-principal-textarea">
+          <textarea
+            class="textarea-cifrar"
+            name="Cifrar"
+            id="Cifrar"
+            autofocus
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </div>
+          <div class="presentacion-principal-reglas">
+            <img class="signo" src="assets/signo exclamacion.jfif" alt="signo exclamacion">
+            <p class="presentacion-principal-texto">
+              No se aceptan mayusculas ni caracteres especiales
+            </p>
+          </div>
 
-      <p>No se aceptan mayusculas ni caracteres especiales</p>
-      <nav class="presentacion-botones">
-        <button class="encriptar">Encriptar</button>
-        <button class="desencriptar">Desencriptar</button>
-        <button class="copiar">Copiar</button>
-    
-      <nav class="presentacion-lateral">
-        <img src="assets/imagen.jfif" alt="chico con lupa">
+        <div class="presentacion-principal-botones">
+          <button class="botones encriptar">Encriptar</button>
+          <button class="botones desencriptar">Desencriptar</button>
+        </div>
+      </section>
+
+      <div class="presentacion-principal-lateral">
+        <textarea
+          class="textarea-desencriptar"
+          name="Descifrar"
+          id="Descifrar"
+        ></textarea>
+        <img
+          class="presentacion-principal-lateral-imagen"
+          src="assets/chico con lupa.jfif"
+          alt="chico con lupa"
+        />
         <p>Ningun mensaje fue encontrado</p>
-        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
-      </nav>
-
+        <p class="presentacion-principal-lateral-texto">
+          Ingresa el texto que deseas encriptar o desencriptar
+        </p>
+        <button class="botones copiar">Copiar</button>
+      </div>
     </main>
-
     <footer>
-        <p>Alexis cantonati</p>
-        <p>2024</p>
+      <p>Alexis cantonati</p>
+      <p>2024</p>
     </footer>
-
   </body>
 </html>

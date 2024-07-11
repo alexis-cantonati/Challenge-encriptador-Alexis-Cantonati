@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --color-primario: white;
+  --color-secundario: #0A3871;
+  --color-terciario: whitesmoke;
+
+  --fuente-inter: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+}
+.presentacion{
+    display: flex;
+}
+.presentacion-principal{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items:first baseline;
+    padding-bottom: 2%;
+    gap: 10px;
+}
+.presentacion-principal-textarea{
+    margin: 6% 20% 60% 20%;
+}
+.textarea-cifrar{
+    width: 300%;
+    height: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    border: none;
+    resize: none;
+    outline: none;
+}
+::placeholder{
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+}
+.presentacion-principal-reglas{
+    display: flex;
+    background-color: var(--color-primario);
+    align-items: center;
+    gap: 6px;
+}
+.signo{
+    width: 1rem;
+    height: 1rem;
+}
+.presentacion-principal-texto{
+    font-size: 0.75rem;
+    color: #495057;
+}
+.presentacion-principal-botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:  1rem;
+    width: 70%;
+}
+.botones{
+    background-color: #D8DFE8;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 16px;
+    border: 2px solid var(--color-secundario);
+    width: 80%;
+    padding: 15px;
+    color: var(--color-secundario);
+}
+.encriptar{
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+.presentacion-principal-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-terciario);
+    font-size: 1.5rem;
+    padding: 4% 1% 2% ;
+    color: black;
+
+}
+.textarea-desencriptar{
+    align-self: flex-start;
+    border: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+}
+.presentacion-principal-lateral-imagen{
+    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 30%;
+}
+.presentacion-principal-lateral-texto{
+    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.copiar{
+    margin-top: auto;
+    /*position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;*/
+}
+
