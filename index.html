@@ -20,8 +20,8 @@
         <div class="presentacion-principal-textarea">
           <textarea
             class="textarea-cifrar"
-            name="Cifrar"
-            id="Cifrar"
+            name="cifrar"
+            id="cifrar"
             autofocus
             placeholder="Ingrese el texto aqui"
           ></textarea>
@@ -34,16 +34,16 @@
           </div>
 
         <div class="presentacion-principal-botones">
-          <button class="botones encriptar">Encriptar</button>
-          <button class="botones desencriptar">Desencriptar</button>
+          <button onclick="encriptar()" class="botones encriptar" id="encriptar">Encriptar</button>
+          <button onclick="desencriptar()" class="botones desencriptar">Desencriptar</button>
         </div>
       </section>
 
       <div class="presentacion-principal-lateral">
         <textarea
           class="textarea-desencriptar"
-          name="Descifrar"
-          id="Descifrar"
+          name="descifrar"
+          id="descifrar"
         ></textarea>
         <img
           class="presentacion-principal-lateral-imagen"
@@ -54,12 +54,13 @@
         <p class="presentacion-principal-lateral-texto">
           Ingresa el texto que deseas encriptar o desencriptar
         </p>
-        <button class="botones copiar">Copiar</button>
+        <button onclick="copiar()" class="botones copiar">Copiar</button>
       </div>
     </main>
     <footer>
       <p>Alexis cantonati</p>
       <p>2024</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
