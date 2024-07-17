@@ -1,4 +1,5 @@
 function encriptar() {
+    document.getElementById("copiar").style.display = "block";
     //Agarro el valor escrito en el textarea "cifrar" y lo almaceno en una variable
     let texto = document.getElementById("cifrar").value;
     console.log(texto);
@@ -29,7 +30,7 @@ function encriptar() {
     //uno todos los elementos de la lista en una palabra
     let codigo = lista.join("");
 
-    //asigno el textarea a la variable t
+    //asigno el textarea a la variable txaDecifrar
     let txaDecifrar = document.getElementById("descifrar");
 
     //Pongo el valor de codigo en el contenido del textarea
