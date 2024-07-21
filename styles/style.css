@@ -99,6 +99,7 @@ body {
 
 }
 .textarea-desencriptar{
+    width: 300px;
     align-self: flex-start;
     border: none;
     background: transparent;
